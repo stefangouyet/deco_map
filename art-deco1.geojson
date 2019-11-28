@@ -1,0 +1,26 @@
+{
+  type: 'FeatureCollection',
+  features: [{
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+    //40.7516° N, 73.9755° W
+      coordinates: [-73.9755, 40.7516]
+    },
+    properties: {
+      title: 'Chrysler Building',
+      description: 'Manhattan'
+    }
+  },
+  {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [-122.414, 37.776]
+    },
+    properties: {
+      title: 'Mapbox',
+      description: 'San Francisco, California'
+    }
+  }]
+}

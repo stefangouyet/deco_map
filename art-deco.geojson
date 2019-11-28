@@ -1,0 +1,46 @@
+﻿{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Chrysler Building",
+        "description": "A beautiful 1929 ",
+
+      },
+      "geometry": {
+        "coordinates": [
+          -87.637596,
+          41.940403
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Burnham Park",
+        "description": "A lakefront park on Chicago's south side"
+      },
+      "geometry": {
+        "coordinates": [
+          -87.603735,
+          41.829985
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Millennium Park",
+        "description": "A downtown park known for its art installations and unique architecture"
+      },
+      "geometry": {
+        "coordinates": [
+          -87.622554,
+          41.882534
+        ],
+        "type": "Point"
+      }
+    }
+}
