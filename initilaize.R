@@ -1,0 +1,5 @@
+library(blogdown)
+blogdown::new_site(theme = 'gadenbuie/hyde')
+setwd('C:/Users/stefan.gouyet/Documents/Projects/deco_map/Website')
+getwd()
+blogdown::serve_site()
