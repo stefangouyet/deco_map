@@ -1,0 +1,170 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building Name": "Chrysler Building",
+        "Year Built": "1930",
+        "City": "New York"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.975311,
+          40.751652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building Name": "Empire State Building",
+        "Year Built": "1931",
+        "City": "New York"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.985428,
+          40.748817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building Name": "Rockefeller Plaza",
+        "Year Built": "1933",
+        "City": "New York"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9787,
+          40.7587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building Name": "The New Yorker",
+        "Year Built": "1930",
+        "City": "New York"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9936,
+          40.7529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building Name": "General Electric Building",
+        "Year Built": "1931",
+        "City": "New York"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9726,
+          40.7572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building Name": "Waldorf Astoria",
+        "Year Built": "1931",
+        "City": "New York"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9728,
+          40.7563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building Name": "American Radiator Building",
+        "Year Built": "1924",
+        "City": "New York"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98397,
+          40.75297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building Name": "El Dorado",
+        "Year Built": "1931",
+        "City": "New York"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9676,
+          40.7885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building Name": "1 Wall Street",
+        "Year Built": "1931",
+        "City": "New York"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0092,
+          40.7063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building Name": "70 Pine Street",
+        "Year Built": "1932",
+        "City": "New York"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0078,
+          40.7065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Building Name": "Coit Tower",
+        "Year Built": "1933",
+        "City": "San Francisco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4058,
+          37.8024
+        ]
+      }
+    }
+  ]
+}
