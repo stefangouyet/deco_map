@@ -11,7 +11,7 @@ export default class ControlPanel extends PureComponent {
           type="radio"
           name="city"
           id={`city-${index}`}
-          defaultChecked={city.city === 'New York'}
+          defaultChecked={city.city === ' 1. New York'}
           onClick={() => this.props.onViewportChange(city)}
         />
         <label htmlFor={`city-${index}`}>{city.city}</label>

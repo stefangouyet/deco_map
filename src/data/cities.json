@@ -1,8 +1,8 @@
 [
-    {"city": "New York","latitude":40.7587,"longitude":-73.9787},
-    {"city": "Chicago","latitude":41.8376,"longitude":-87.6818},
-    {"city": "Rio de Janeiro","latitude": -43.2105, "longitude":-23.9519},
-    {"city": "Paris","latitude": 48.85, "longitude":2.3522},
-    {"city": "Miami","latitude": 25.7617, "longitude":-80.1918},
-    {"city": "Napier","latitude": -39.4928, "longitude":176.9120}
+    {"city": " 1. New York","latitude":40.7587,"longitude":-73.9787},
+    {"city": " 2. Chicago","latitude":41.886604,"longitude":-87.625039},
+    {"city": " 3. Rio de Janeiro","latitude": -43.2105, "longitude":-23.9519},
+    {"city": " 4. Paris","latitude": 48.85, "longitude":2.3522},
+    {"city": " 5. Miami","latitude": 25.7617, "longitude":-80.1918},
+    {"city": " 6. Napier","latitude": -39.4928, "longitude":176.9120}
 ]
