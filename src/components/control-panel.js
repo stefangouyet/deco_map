@@ -22,7 +22,7 @@ export default class ControlPanel extends PureComponent {
   render() {
     return (
       <div className="control-panel">
-        <h3>Top Deco Cities</h3>
+        <h3>Deco Cities</h3>
         <div className="source-link">
         </div>
         <hr />

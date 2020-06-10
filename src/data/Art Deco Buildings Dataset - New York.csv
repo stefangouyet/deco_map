@@ -1,4 +1,4 @@
-Building Name,Lat,Long,Year Built,City
+Building Name,Lat,Long,Year Completed,City
 Chrysler Building,40.751652,-73.975311,1930,New York
 Empire State Building,40.748817,-73.985428,1931,New York
 Rockefeller Plaza,40.7587,-73.9787,1933,New York
@@ -7,6 +7,24 @@ General Electric Building,40.7572,-73.9726,1931,New York
 Waldorf Astoria,40.7563,-73.9728,1931,New York
 American Radiator Building,40.75297,-73.98397,1924,New York
 El Dorado,40.7885,-73.9676,1931,New York
-1 Wall Street,40.7063,-74.0092,1931,New York
 70 Pine Street,40.7065,-74.0078,1932,New York
 Coit Tower,37.8024,-122.4058,1933,San Francisco
+Cristo Redentor,-22.9519,-43.2105,1931,Rio de Janeiro
+Copacabana Palace,-22.966914,-43.178981,1923,Rio de Janeiro
+Art Deco Masonic Hotel,-39.48949,176.91857,1932,Napier
+Daily Telegraph Building,-39.505051,176.910873,1933,Napier
+Carbon and Carbide Building,41.886604,-87.625039,1929,Chicago
+Chicago Motor Club Building,41.886983,-87.625418,1928,Chicago
+Chicago Board of Trade Building,41.877735,-87.632272,1930,Chicago
+Merchandise Mart,41.888261,-87.635393,1930,Chicago
+Adler Planetarium,41.866349,-87.606788,1930,Chicago
+Théâtre des Champs-Elysées,48.865693,2.303144,1913,Paris
+Folies-Bergère,48.874495,2.34494,1926,Paris
+Le Louxor,48.883488,2.349854,1921,Paris
+La Samaritaine,48.859522,2.342977,1928,Paris
+Palais de Tokyo,48.864188,2.296512,1937,Paris
+Hotel Breakwater,25.779956,-80.131041,1936,Miami
+Miami Beach Post Office,25.784416,-80.132453,1937,Miami
+Essex House,25.78074,-80.131431,1938,Miami
+The Cadillac Hotel,25.812028,-80.122787,1940,Miami
+Clevelander Hotel,25.780811,-80.130663,1938,Miami

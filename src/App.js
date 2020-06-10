@@ -1,12 +1,10 @@
 import React, {Component, useEffect} from 'react';
-import {render} from 'react-dom';
-//import Geocoder from "react-map-gl-geocoder";
 import MapGL, {Source, Layer,Marker,NavigationControl,Popup,FlyToInterpolator} from 'react-map-gl';
 
 import ControlPanel from './components/control-panel';
 import buildings from './data/deco_buildings.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faBiking, faTrophy} from '@fortawesome/free-solid-svg-icons';
+import {faBiking, faTrophy, faMapMarker} from '@fortawesome/free-solid-svg-icons';
 import BuildingInfo from './components/BuildingInfo';
 
 import './App.css'
@@ -31,8 +29,8 @@ const mapStyle="mapbox://styles/stefangouyet/ck8v4xh0j20001jm6a1wlo41g"
 class App extends Component {
   state = {
     viewport: {
-      latitude: 37.7751,
-      longitude: -122.4193,
+      latitude: 40.7587,
+      longitude: -73.9787,
       zoom: 11,
       bearing: 0,
       pitch: 0
@@ -138,7 +136,7 @@ class App extends Component {
             longitude={building.geometry.coordinates[0]}
             >
               <FontAwesomeIcon 
-              icon={faTrophy} 
+              icon={faMapMarker} 
               size='1x' 
               color='black' 
               onClick={e => {//this._onClickMarker(building.properties['Building Name'])}
@@ -161,7 +159,7 @@ class App extends Component {
               <button className='button'>
                   {/* <img src = '../public/Chrysler_Building_eagle.jpg' alt='icon' /> */}
                   <h1>{selectedBuilding.properties['Building Name']}</h1>
-                  <h3>Constructed in {selectedBuilding.properties['Year Built']}</h3>
+                  <h3>Constructed in {selectedBuilding.properties['Year Completed']}</h3>
                   <img 
                   className='photo' 
                   src={require('./images/'+selectedBuilding.properties['Building Name'] + '.jpg')} 
