@@ -1,30 +1,15 @@
-import React, {Component, useEffect} from 'react';
-import MapGL, {Source, Layer,Marker,NavigationControl,Popup,FlyToInterpolator} from 'react-map-gl';
-
+import React, {Component} from 'react';
+import MapGL, {Marker,Popup,FlyToInterpolator} from 'react-map-gl';
 import ControlPanel from './components/control-panel';
 import buildings from './data/deco_buildings.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faBiking, faTrophy, faMapMarker} from '@fortawesome/free-solid-svg-icons';
-import BuildingInfo from './components/BuildingInfo';
+import {faMapMarker} from '@fortawesome/free-solid-svg-icons';
 
 import './App.css'
 
 const mapStyle="mapbox://styles/stefangouyet/ck8v4xh0j20001jm6a1wlo41g"
 
-// useEffect(() => {
-//     const listener = (e) => {
-//       if (e.key == "Escape") {
-//         this.setState({
-//           builingData:null
-//         })
-//       }
-//     };
-//     window.addEventListener('keydown',listener);
-
-
-//   }, 
-
-// [])
+const mapboxToken = process.env.REACT_APP_MAPBOX_TOKEN //add Mapbox token here or in .env.local file
 
 class App extends Component {
   state = {
@@ -33,7 +18,8 @@ class App extends Component {
       longitude: -73.9787,
       zoom: 11,
       bearing: 0,
-      pitch: 0
+      pitch: 0,
+      minZoom:1.5
     },
     popupInfo: null
   };
@@ -68,49 +54,6 @@ class App extends Component {
     });
   };
 
-  _onClickMarker = building => {
-    this.setState({popupInfo: building});
-    console.log('set')
-    console.log(building)
-  };
-
-
-  _renderPopup() {
-    const {popupInfo} = this.state;
-
-    const filterBuilding =(data, building) => {
-      const features = data.features.filter(feature => {
-        return (
-            feature.properties['Building Name'] === building
-        )})
-        return {type: 'FeatureCollection', features};
-    };
-
-    const buildingData = filterBuilding(this.state.data,popupInfo);
-
-    // console.log('stefan')
-    // console.log(buildingData)
-
-    // console.log(buildingData.features[0])
-
-    return (
-      popupInfo && (
-        <Popup
-          tipSize={1}
-          anchor="top"
-          latitude={buildingData.features[0].geometry.coordinates[1]}
-          longitude={buildingData.features[0].geometry.coordinates[0]}
-          closeOnClick={false}
-          onClose={() => this.setState({buildingData: null})}
-        >
-          {/* <BuildingInfo info={buildingData} /> */}
-          <button>
-            <img src = './public/Chrysler_Building_eagle.jpg' alt='icon' />
-          </button>
-        </Popup>
-      )
-    );
-  }
 
   render() {
     const {viewport, selectedBuilding} = this.state;
@@ -126,7 +69,7 @@ class App extends Component {
            onViewportChange={this.handleViewportChange}
            mapStyle={mapStyle}
            onClick={() => this.setState({ selectedBuilding: null })}
-           mapboxApiAccessToken={'pk.eyJ1Ijoic3RlZmFuZ291eWV0IiwiYSI6ImNrNzlqbm8ycTA5bXUzbXFyMWZreGMxb24ifQ.hGYafiv-Xt5DXaUZgz4M8Q'}
+           mapboxApiAccessToken={mapboxToken}
           
         >
           {this.state.data && this.state.data.features.map(building =>
@@ -139,14 +82,14 @@ class App extends Component {
               icon={faMapMarker} 
               size='1x' 
               color='black' 
-              onClick={e => {//this._onClickMarker(building.properties['Building Name'])}
+              onClick={e => {
                           e.preventDefault();
                           console.log(building)
                           console.log(building.properties['Building Name'] + '.jpg')
                           this.setState({selectedBuilding:building})
           }}
               />
-              {this._renderPopup()}
+            
             </Marker>
           )}
 
@@ -157,9 +100,8 @@ class App extends Component {
             closeOnClick={false}
             onClose={() => this.setState({selectedBuilding: null})}>
               <button className='button'>
-                  {/* <img src = '../public/Chrysler_Building_eagle.jpg' alt='icon' /> */}
                   <h1>{selectedBuilding.properties['Building Name']}</h1>
-                  <h3>Constructed in {selectedBuilding.properties['Year Completed']}</h3>
+                  <h3>Completed in {selectedBuilding.properties['Year Completed']}</h3>
                   <img 
                   className='photo' 
                   src={require('./images/'+selectedBuilding.properties['Building Name'] + '.jpg')} 

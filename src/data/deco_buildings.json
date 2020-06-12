@@ -139,21 +139,6 @@
     {
       "type": "Feature",
       "properties": {
-        "Building Name": "Coit Tower",
-        "Year Completed": "1933",
-        "City": "San Francisco"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.4058,
-          37.8024
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "Building Name": "Cristo Redentor",
         "Year Completed": "1931",
         "City": "Rio de Janeiro"
@@ -328,21 +313,6 @@
         "coordinates": [
           2.349854,
           48.883488
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Building Name": "La Samaritaine",
-        "Year Completed": "1928",
-        "City": "Paris"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.342977,
-          48.859522
         ]
       }
     },

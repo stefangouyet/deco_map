@@ -30,6 +30,5 @@ export default class ControlPanel extends PureComponent {
         {CITIES.map(this._renderButton)}
       </div>
     );
-    //{CITIES.filter(city => city.state === 'California').map(this._renderButton)}
   }
 }
